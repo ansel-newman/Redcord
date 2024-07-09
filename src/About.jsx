@@ -16,8 +16,10 @@ function About(){
             The currently supported list of searched forums are below (more will be added over time):
             </p>
             <ul>
-                <li>Reddit/WebDev</li>
-                <li>Discord/JavaScript Mastery</li>
+                <li class="forum">Reddit/r/webdev</li>
+                <li class="forum">Reddit/r/javascript</li>
+                <li class="forum">Discord/JavaScript Mastery Community</li>
+                <li class="forum">Discord/web dev and web design</li>
             </ul>
         </div>
     );

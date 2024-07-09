@@ -32,7 +32,6 @@ const Search = () => {
             <button id="button" onClick={()=>handleSearch()}>Submit</button>
             <div>
                 {results.map((result, index) => (
-                    // <p key={index}>{JSON.stringify(result)}</p>
                     <div class="container">
                         <h4 key={index}>{result.title}</h4>
                         <p key={index}>{result.content}</p>

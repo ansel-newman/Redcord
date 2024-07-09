@@ -47,3 +47,7 @@
   width: 95%; /* Optional: Set a width */
   height: 250px; /* Optional: Set a height */
 }
+
+.forum{
+  font-family: 'Courier New', Courier, monospace;
+}
