@@ -62,5 +62,5 @@ def scrape_discord():
             existing_data.extend(formatted_messages)
             with open(file_path, 'w', encoding='utf-8') as f:
                 json.dump(existing_data, f, ensure_ascii=False, indent=4)
-            pbar.update(1)
-            return
+        pbar.update(1)
+        return
