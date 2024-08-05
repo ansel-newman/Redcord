@@ -45,7 +45,7 @@
   border-radius: 10px; /* Adjust this value to change the roundness */
   padding: 20px; /* Optional: Add some padding inside the div */
   width: 95%; /* Optional: Set a width */
-  height: 250px; /* Optional: Set a height */
+  min-height: 250px; /* Optional: Set a height */
 }
 
 .forum{
