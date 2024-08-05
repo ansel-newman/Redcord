@@ -21,9 +21,33 @@ Simply clone this repository to a presignated location locally using the command
 
 <code>git clone https://github.com/ansel-newman/Redcord.git</code>
 
-and then a subdirectory Redcord should appear. Enter the folder and run <code>npm run dev</code> to start the vite rendering of the front end and navigate to the local address listed in the terminal. Next to ensure the site is functional and not only cosmetic proceed to the backend folder and run <code>python3 app.py</code>, and make sure your python interpretter (check using <code>python3 --version</code> )is set to version 3.10.1 to match the python virtual environment containing the backend dependencies.
+The repo should be downloaded, and a subdirectory Redcord should appear. Enter the folder (cd Redcord) and run the following commands:
 
-This should enable functionality!
+<code>npm install</code>
+
+<code>npm run dev</code>
+
+Navigate to the localhost link that appears in the terminal within your browser.
+This will effectively set up the front end but we are not complete. In a new terminal navigate to the Redcord folder, then navigate to the backend folder (cd backend)
+
+First we will set up a virtual environment with python version 3.10.1 to be compatible with the project's dependencies and to accomplish this run the following in terminal:
+
+<code>python3.10 -m venv venv</code>
+
+<code>source venv/bin/activate</code>
+
+<code>python --version</code>
+
+Now we install the dependencies using the requirements.txt file. In the terminal run
+
+<code>pip install -r requirements.txt</code>
+
+Finally to begin the process of scraping the data for use and communicating with the frontend run:
+
+<code>python3 app.py</code>
+
+This should enable functionality, so please enjoy!
+
 
 ### Licensing 
 This project is released under the M.I.T. open source license. Anyone is welcome to use and improve.
