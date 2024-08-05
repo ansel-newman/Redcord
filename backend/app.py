@@ -72,6 +72,20 @@ def process_json_file(json_file_path, query_words):
     scored_posts.sort(key=lambda x: x['score'], reverse=True)
     return scored_posts
 
+def delete_file(filepath):
+    try:
+        os.remove(filepath)
+        print(f"Deleted file: {filepath}")
+    return
+
+def create_file_with_empty_json(filepath):
+    try:
+        with open(filepath, 'w') as file:
+            json.dump([], file)
+        print(f"Created file with empty JSON array: {filepath}")
+    except Exception as e:
+        print(f"Error creating file: {e}")
+
 REDDIT_DONE = False
 DISCORD_DONE = False
 BOOT_DONE = False
@@ -84,6 +98,8 @@ def boot():
         print("R E D C O R D")
         print("=============================================================================")
         print('\n>>    Setting up Redcord Backend! This process normally takes a few minutes.\n>>    Initiating scraping sequence ...\n')
+        delete_file('data/results.json')
+        create_file_with_empty_json('data/results.json')
         if not DISCORD_DONE:
             scrape_discord()
             DISCORD_DONE = True
