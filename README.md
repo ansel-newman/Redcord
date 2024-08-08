@@ -48,6 +48,14 @@ Finally to begin the process of scraping the data for use and communicating with
 
 This should enable functionality, so please enjoy!
 
+Note if you don't have python version 3.10.1 downloaded, you can always use the docker configuration within the backend folder.
+Simply run:
+
+<code>docker build -t my-python-app</code>
+
+and then once the image is built configure it with the command:
+
+<code>docker run -it --rm -p 5000:5000 --name my-running-app my-python-app</code>
 
 ### Licensing 
 This project is released under the M.I.T. open source license. Anyone is welcome to use and improve.
